@@ -1,0 +1,95 @@
+---
+import Header from '../components/Header.astro';
+import NavigationBar from '../components/NavigationBar.astro';
+
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header/>
+		<NavigationBar/>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
+<style is:global>
+
+	:root {
+		--BG-1: #292F36;
+	}
+
+	html {
+		font-family: system-ui, sans-serif;
+		background: #13151a;
+		background-size: 224px;
+		color-scheme: dark light;
+	}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollButton = document.getElementById('btn-inicio');
+  var seccionDestino = document.getElementById('inicio');
+
+  scrollButton?.addEventListener('click', function() {
+    // Calcular la posición de la sección de destino
+    var topPos = seccionDestino?.offsetTop;
+
+    // Scroll suave animado
+    window.scrollTo({
+      top: topPos,
+      behavior: 'smooth'
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollButton = document.getElementById('btn-sobre-nosotros');
+  var seccionDestino = document.getElementById('sobre-nosotros');
+
+  scrollButton?.addEventListener('click', function() {
+    // Calcular la posición de la sección de destino
+    var topPos = seccionDestino?.offsetTop;
+
+    // Scroll suave animado
+    window.scrollTo({
+      top: topPos,
+      behavior: 'smooth'
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollButton = document.getElementById('btn-skills');
+  var seccionDestino = document.getElementById('skills');
+
+  scrollButton?.addEventListener('click', function() {
+    // Calcular la posición de la sección de destino
+    var topPos = seccionDestino?.offsetTop;
+
+    // Scroll suave animado
+    window.scrollTo({
+      top: topPos,
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
