@@ -39,6 +39,7 @@ export default {
 			  animation: {
 				'typing-20': 'typing 2s steps(20)',
 				blink: 'blink .5s infinite step-end alternate',
+				'bounce-slow': 'bounce 2s infinite',
 			  },
 			  backgroundImage: {
 				'img-oficina': "url('/img-oficina.webp')"
