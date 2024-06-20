@@ -22,6 +22,7 @@ export default {
 			},
 			boxShadow: {
 				'card': '-4px -4px 2px 0px #12F7D6',
+				'avatar': '-4px -4px 2px 0px #12F7D6',
 				'highlights': '2px 2px 4px 0px rgba(0, 0, 0, 0.25)'
 			  },
 			  flex: {

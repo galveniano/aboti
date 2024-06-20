@@ -1,15 +1,40 @@
 ---
 interface Props {
 	name: string;
+    instagram: string;
+    linkedin: string;
 }
 
 const { name } = Astro.props;
 
 ---
-<div class="flex flex-col pr-5 items-center justify-center rounded-t-[160px] rounded-b-[160px] border-4 bg-bg1 border-solid border-white shadow-card gap-[32px] w-[320px] h-[530px]">
+<div class="flex flex-col pr-5 items-center justify-center rounded-t-[160px] rounded-b-[160px] border-4 bg-bg1 border-solid border-white shadow-card gap-[32px] w-[320px] h-[550px]">
     <div class="flex flex-col items-center gap-[16px] ml-4">
         <div class="flex flex-col items-center gap-[16px]">
             <slot name="avatar"/>
+            <div slot="redes-sociales" class="">
+                <a class="flex items-center gap-2 text-white font-ibm hover:text-brand1" href=`https://www.instagram.com/{instagram}/`>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_513_656)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.11701 6.26551C8.89493 5.86187 9.78031 5.71379 10.6472 5.84235C11.5315 5.97348 12.3502 6.38554 12.9823 7.01767C13.6145 7.64979 14.0265 8.46847 14.1577 9.35276C14.2862 10.2197 14.1381 11.1051 13.7345 11.883C13.3308 12.6609 12.6922 13.2917 11.9093 13.6858C11.1265 14.0798 10.2394 14.2169 9.3741 14.0777C8.50882 13.9385 7.70949 13.5299 7.08978 12.9102C6.47007 12.2905 6.06154 11.4912 5.92231 10.6259C5.78307 9.76063 5.92022 8.87349 6.31424 8.09065C6.70826 7.30782 7.3391 6.66916 8.11701 6.26551ZM10.4028 7.49098C9.88261 7.41385 9.35138 7.5027 8.88463 7.74489C8.41788 7.98707 8.03938 8.37027 7.80297 8.83997C7.56655 9.30967 7.48427 9.84196 7.5678 10.3611C7.65135 10.8803 7.89646 11.3599 8.26829 11.7317C8.64011 12.1035 9.11972 12.3487 9.63888 12.4322C10.158 12.5157 10.6903 12.4334 11.16 12.197C11.6297 11.9606 12.0129 11.5821 12.2551 11.1154C12.4973 10.6486 12.5861 10.1174 12.509 9.59723C12.4303 9.06666 12.1831 8.57545 11.8038 8.19618C11.4245 7.8169 10.9333 7.56966 10.4028 7.49098Z" fill="#12F7D6"/>
+                        <path d="M14.5834 4.58334C14.1231 4.58334 13.75 4.95643 13.75 5.41667C13.75 5.87691 14.1231 6.25 14.5834 6.25H14.5917C15.0519 6.25 15.425 5.87691 15.425 5.41667C15.425 4.95643 15.0519 4.58334 14.5917 4.58334H14.5834Z" fill="#12F7D6"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833374 5.83334C0.833374 3.07191 3.07195 0.833336 5.83337 0.833336H14.1667C16.9281 0.833336 19.1667 3.07191 19.1667 5.83334V14.1667C19.1667 16.9281 16.9281 19.1667 14.1667 19.1667H5.83337C3.07195 19.1667 0.833374 16.9281 0.833374 14.1667V5.83334ZM5.83337 2.5C3.99242 2.5 2.50004 3.99239 2.50004 5.83334V14.1667C2.50004 16.0076 3.99242 17.5 5.83337 17.5H14.1667C16.0077 17.5 17.5 16.0076 17.5 14.1667V5.83334C17.5 3.99239 16.0077 2.5 14.1667 2.5H5.83337Z" fill="#12F7D6"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_513_656">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                        Instagram
+                </a>
+                <a class="flex items-center gap-2 text-white font-ibm hover:text-brand1" href=`https://www.instagram.com/{instagram}/`>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                        <g fill="#12f7d6" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.895,-2 -2,-2zM10.954,22h-2.95v-9.492h2.95zM9.449,11.151c-0.951,0 -1.72,-0.771 -1.72,-1.72c0,-0.949 0.77,-1.719 1.72,-1.719c0.948,0 1.719,0.771 1.719,1.719c0,0.949 -0.771,1.72 -1.719,1.72zM22.004,22h-2.948v-4.616c0,-1.101 -0.02,-2.517 -1.533,-2.517c-1.535,0 -1.771,1.199 -1.771,2.437v4.696h-2.948v-9.492h2.83v1.297h0.04c0.394,-0.746 1.356,-1.533 2.791,-1.533c2.987,0 3.539,1.966 3.539,4.522z"></path></g></g>
+                        </svg>
+                        LinkedIn
+                </a>
+            </div>
                 <p class="text-white font-ibm text-[24px] font-medium capitalize leading-10">{name}</p>
             </div>
         </div>
@@ -23,7 +48,3 @@ const { name } = Astro.props;
 
     </div>
 </div>
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.8 61.8" id="avatar"><g><g><circle cx="30.9" cy="30.9" r="30.9" fill="#ffc200"></circle><path fill="#677079" fill-rule="evenodd" d="M52.587 52.908a30.895 30.895 0 0 1-43.667-.291 9.206 9.206 0 0 1 4.037-4.832 19.799 19.799 0 0 1 4.075-2.322c-2.198-7.553 3.777-11.266 6.063-12.335 0 3.487 3.265 1.173 7.317 1.217 3.336.037 9.933 3.395 9.933-1.035 3.67 1.086 7.67 8.08 4.917 12.377a17.604 17.604 0 0 1 3.181 2.002 10.192 10.192 0 0 1 4.144 5.22z"></path><path fill="#f9dca4" fill-rule="evenodd" d="m24.032 38.68 14.92.09v3.437l-.007.053a2.784 2.784 0 0 1-.07.462l-.05.341-.03.071c-.966 5.074-5.193 7.035-7.803 8.401-2.75-1.498-6.638-4.197-6.947-8.972l-.013-.059v-.2a8.897 8.897 0 0 1-.004-.207c0 .036.003.07.004.106z"></path><path fill-rule="evenodd" d="M38.953 38.617v4.005a7.167 7.167 0 0 1-.095 1.108 6.01 6.01 0 0 1-.38 1.321c-5.184 3.915-13.444.704-14.763-5.983z" opacity=".11"></path><path fill="#f9dca4" fill-rule="evenodd" d="M18.104 25.235c-4.94 1.27-.74 7.29 2.367 7.264a19.805 19.805 0 0 1-2.367-7.264zM43.837 25.235c4.94 1.27.74 7.29-2.368 7.263a19.8 19.8 0 0 0 2.368-7.263z"></path><path fill="#ffe8be" fill-rule="evenodd" d="M30.733 11.361c20.523 0 12.525 32.446 0 32.446-11.83 0-20.523-32.446 0-32.446z"></path><path fill="#8a5c42" fill-rule="evenodd" d="M21.047 22.105a1.738 1.738 0 0 1-.414 2.676c-1.45 1.193-1.503 5.353-1.503 5.353-.56-.556-.547-3.534-1.761-5.255s-2.032-13.763 4.757-18.142a4.266 4.266 0 0 0-.933 3.6s4.716-6.763 12.54-6.568a5.029 5.029 0 0 0-2.487 3.26s6.84-2.822 12.54.535a13.576 13.576 0 0 0-4.145 1.947c2.768.076 5.443.59 7.46 2.384a3.412 3.412 0 0 0-2.176 4.38c.856 3.503.936 6.762.107 8.514-.829 1.752-1.22.621-1.739 4.295a1.609 1.609 0 0 1-.77 1.214c-.02.266.382-3.756-.655-4.827-1.036-1.07-.385-2.385.029-3.163 2.89-5.427-5.765-7.886-10.496-7.88-4.103.005-14 1.87-10.354 7.677z"></path><path fill="#434955" fill-rule="evenodd" d="M19.79 49.162c.03.038 10.418 13.483 22.63-.2-1.475 4.052-7.837 7.27-11.476 7.26-6.95-.02-10.796-5.6-11.154-7.06z"></path><path fill="#e6e6e6" fill-rule="evenodd" d="M36.336 61.323c-.41.072-.822.135-1.237.192v-8.937a.576.576 0 0 1 .618-.516.576.576 0 0 1 .619.516v8.745zm-9.82.166q-.622-.089-1.237-.2v-8.711a.576.576 0 0 1 .618-.516.576.576 0 0 1 .62.516z"></path></g></g></svg> <div class="flex flex-col items-center"> -->
-
-<!-- <p class="text-white font-ibm text-[14px] font-light">Soy un programador con más de <strong class="text-brand1 hover:text-brand2">7</strong> años de experiencia, especializado en proyectos de <strong class="text-brand1 hover:text-brand2">inteligencia artificial</strong> y desarrollo de <strong class="text-brand1 hover:text-brand2">chatbots</strong>.</p> -->
