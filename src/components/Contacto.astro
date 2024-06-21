@@ -1,18 +1,23 @@
 ---
 import MouseHeader from '../components/MouseHeader.astro';
+import TituloSeccion from '../components/TituloSeccion.astro';
 ---
-<div class="flex gap-2 items-center flex-col justify-center gap-[64px] self-stretch">
+
+
+<div class="flex gap-2 items-center p-[128px] flex-col justify-center gap-[64px] self-stretch">
     <MouseHeader/>
     <div class="flex flex-col justify-center items-center gap-[40px] self-stretch">
+
         <div class="flex justify-center items-center self-stretch">
             <h2 class="text-brand2 text-[40px] font-code capitalize font-normal leading-10 animate-slide-in-top">Contacto</h2>
         </div>
         <div class="flex justify-center items-center gap-[128px] self-stretch">
             <p class="text-white font-ibm text-[14px] font-light">Estamos preparados para ayudarte.</p>
         </div>
-        <div class="flex justify-center mb-5 rounded-tl-[40px] border-2 border-brand1  hover:text-brand1 hover:border-white rounded-br-[40px] bg-bg1 font-light text-white px-6 py-2 text-[25px] whitespace-nowrap">
+
+        <TituloSeccion>
             Envianos un Mensaje
-        </div>
+        </TituloSeccion>
 
         <div class="grid mb-5 w-100 gap-4 grid-cols-2 grid-rows-2" >   
             <div>   
