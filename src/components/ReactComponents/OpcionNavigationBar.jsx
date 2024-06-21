@@ -7,7 +7,7 @@ function OpcionNavigationBar({ id, children, label }) {
     <div>
       <button
         id={id}
-        class="rounded-full focus:border-brand1 border-2 border-negro1"
+        className="rounded-full focus:border-brand1 border-2 border-negro1"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -15,7 +15,7 @@ function OpcionNavigationBar({ id, children, label }) {
       </button>
 
       <span
-        class={`${
+        className={`${
           isHovered ? "absolute" : "hidden"
         }  absolute ml-[30%] mt-[40%]  transform -translate-y-1/2 bg-white text-ubuntu whitespace-nowrap text-bg1 text-sm px-2 py-1 rounded-[8px] transition-opacity`}
       >

@@ -13,7 +13,14 @@ export default {
 				brand1: '#12F7D6',
 				brand2: '#98FAEC',
 				grey1: '#43454D',
-				negro1: '#1A1E23'		
+				negro1: '#1A1E23',
+				blue1: '#0C73B8',
+				purple1: '#9B12F7',
+				purple2: '#4E0281',
+				react: '#28a9e0',
+				html: '#e54f26',
+				js: '#e7a020',
+				css: '#8f5256'
 			},
 			fontFamily: {
 				code: '"Press Start 2P"',
@@ -42,7 +49,8 @@ export default {
 				'bounce-slow': 'bounce 2s infinite',
 			  },
 			  backgroundImage: {
-				'img-oficina': "url('/img-oficina.webp')"
+				'img-oficina': "url('/img-oficina.webp')",
+				'img-code': "url('/fondo3.jpg')"
 			  }
 		},
 	},
