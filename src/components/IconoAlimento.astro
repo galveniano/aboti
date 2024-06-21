@@ -1,0 +1,14 @@
+---
+interface Props {
+    src: string;
+    alt?: string;
+}
+
+const { src, alt = "Icono de alimento" } = Astro.props;
+---
+
+<div class="absolute bottom-[30%] right-[-50%] w-8 h-8 text-white items-center text-center animate-hang" style="animation-delay: 500ms; animation-duration: 2s; animation-iteration-count: infinite">
+    <img src={src} alt={alt} class="object-contain" />  
+</div>
+
+
