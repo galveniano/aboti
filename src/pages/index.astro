@@ -3,16 +3,18 @@ import Layout from '../layouts/Layout.astro';
 import Home from '../components/Home.astro';
 import SobreNosotros from '../components/SobreNosotros.astro';
 import Contacto from '../components/Contacto.astro';
+import Demos from '../components/Demos.astro';
 ---
 
 <Layout title="AbotI">
 	<section id="inicio" class="flex justify-center items-start self-strech pt-16 pr-32 pb-32 pl-32 h-[100vh]">
 		<Home/>
 	</section>
-	<section id="sobre-nosotros" class="text-brand1 bg-img-oficina bg-opacity-50 flex justify-center h-[100vh]">
+	<section id="sobre-nosotros" class="text-brand1  bg-img-code bg-opacity-50 flex justify-center h-[100vh]">
 		<SobreNosotros/>
 	</section>
-	<section id="skills"  class="text-white">
+	<section id="demos"  class="flex justify-center items-start self-strech pt-16 pr-32 pb-32  pl-32 h-[100vh] bg-opacity-50">	  
+		<Demos/>
 	</section>
 	<section id="contacto"  class="text-brand1 flex justify-center h-[100vh]">
 		<Contacto/>
