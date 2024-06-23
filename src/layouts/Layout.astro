@@ -92,4 +92,19 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollButton = document.getElementById('btn-contacto');
+  var seccionDestino = document.getElementById('contacto');
+
+  scrollButton?.addEventListener('click', function() {
+    // Calcular la posición de la sección de destino
+    var topPos = seccionDestino?.offsetTop;
+
+    // Scroll suave animado
+    window.scrollTo({
+      top: topPos,
+      behavior: 'smooth'
+    });
+  });
+});
 </script>
