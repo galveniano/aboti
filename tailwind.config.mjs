@@ -51,6 +51,11 @@ export default {
 			  backgroundImage: {
 				'img-oficina': "url('/img-oficina.webp')",
 				'img-code': "url('/fondo3.jpg')"
+			  },
+			  screens: {
+				'movil': '660px',
+				'maxFooterIcons': '545px',
+				'maxAside': '1350px'
 			  }
 		},
 	},

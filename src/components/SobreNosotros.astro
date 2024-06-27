@@ -1,27 +1,103 @@
 ---
-import MouseHeader from '../components/MouseHeader.astro';
-import CardEmployee from '../components/CardEmployee.astro';
-import TituloSeccion from '../components/TituloSeccion.astro';
+import MouseHeader from "../components/MouseHeader.astro";
+import CardEmployee from "../components/CardEmployee.astro";
+import TituloSeccion from "../components/TituloSeccion.astro";
 ---
-<div class="flex gap-2 items-center p-[128px] flex-col justify-center gap-[45px] self-stretch">
-    <MouseHeader/>
-    <div class="flex flex-col justify-center items-center gap-[40px] self-stretch">
-        <TituloSeccion >
-            Sobre nosotros
-        </TituloSeccion>
-        <div class="flex justify-center items-center gap-[128px] self-stretch">
-            <CardEmployee name="Francisco Gálvez" instagram='galveniano' linkedin="" nameColor='text-lime-700' mandoColor='#4b7911' src="./batido.png">
-                <img slot="avatar" class="min-w-[80px] hover:opacity-80 w-[33%] h-[80%]  border-y-2 border-double hover:border-lime-700 border-bg1" src="./galveniano-8bit.png" alt="logo-galveniano"/>
-                <p slot="descripcion" class="text-white font-ibm text-[14px] font-light">Soy un programador con más de <strong class="text-brand1 hover:text-brand2">7</strong> años de experiencia, especializado en proyectos de <strong class="text-brand1 hover:text-brand2">inteligencia artificial</strong> y desarrollo de <strong class="text-brand1 hover:text-brand2">chatbots</strong>.</p>
-            </CardEmployee>
-            <CardEmployee name="Diego Pérez" instagram='galveniano' linkedin="" nameColor='text-amber-500' mandoColor='#f49e0b' src="./cafe.png">
-                <img slot="avatar" class="min-w-[80px] hover:opacity-80 w-[33%] h-[80%]  border-y-2 border-double hover:border-amber-500 border-bg1" src="./diego-8bit.png" alt="logo-diego"/>
-                <p slot="descripcion" class="text-white font-ibm text-[14px] font-light">Soy un programador con más de <strong class="text-brand1 hover:text-brand2">6</strong> años de experiencia, como <strong class="text-brand1 hover:text-brand2">Software Engineer</strong> y desarrollo de <strong class="text-brand1 hover:text-brand2">Inteligencia Artificial</strong>.</p>
-            </CardEmployee>
-            <CardEmployee name="Antonio Valverde" instagram='galveniano' linkedin="" nameColor='text-violet-500' mandoColor='#895bf3' src="./redbull.png">
-                <img slot="avatar" class="min-w-[80px] hover:opacity-80 w-[33%] h-[80%]  border-y-2 border-double hover:border-violet-500 border-bg1" src="./galveniano-8bit.png" alt="logo-antonio"/>
-                <p slot="descripcion" class="text-white font-ibm text-[14px] font-light">Soy un programador con más de <strong class="text-brand1 hover:text-brand2">6</strong> años de experiencia, especializado en proyectos de <strong class="text-brand1 hover:text-brand2">inteligencia artificial</strong> y desarrollo de <strong class="text-brand1 hover:text-brand2">chatbots</strong>.</p>
-            </CardEmployee>
-        </div>
+
+<div
+  class="flex items-center 2xl:p-[128px] flex-col justify-center gap-[45px] self-stretch mt-4 xl:mt-0 mb-4 xl:mb-0"
+>
+  <MouseHeader />
+  <div
+    class="flex flex-col justify-center items-center gap-[20px] 2xl:gap-[40px] self-stretch"
+  >
+    <TituloSeccion> Sobre nosotros </TituloSeccion>
+    <div
+      class="flex flex-col xl:flex-row justify-center items-center gap-[55px] 2xl:gap-[128px] self-stretch"
+    >
+      <CardEmployee
+        name="Francisco Gálvez"
+        instagram="galveniano"
+        linkedin=""
+        nameColor="text-lime-700"
+        mandoColor="#4b7911"
+        src="./batido.png"
+      >
+        <img
+          slot="avatar"
+          class="min-w-[80px] hover:opacity-80 w-[33%] h-[80%] border-y-2 border-double hover:border-lime-700 border-bg1"
+          src="./galveniano-8bit.png"
+          alt="logo-galveniano"
+        />
+        <p
+          slot="descripcion"
+          class="text-white font-ibm text-[14px] font-light"
+        >
+          Soy un programador con más de <strong
+            class="text-brand1 hover:text-brand2">7</strong
+          > años de experiencia, especializado en proyectos de <strong
+            class="text-brand1 hover:text-brand2"
+            >inteligencia artificial</strong
+          > y desarrollo de <strong class="text-brand1 hover:text-brand2"
+            >chatbots</strong
+          >.
+        </p>
+      </CardEmployee>
+      <CardEmployee
+        name="Diego Pérez"
+        instagram="galveniano"
+        linkedin=""
+        nameColor="text-amber-500"
+        mandoColor="#f49e0b"
+        src="./cafe.png"
+      >
+        <img
+          slot="avatar"
+          class="min-w-[80px] hover:opacity-80 w-[33%] h-[80%] border-y-2 border-double hover:border-amber-500 border-bg1"
+          src="./diego-8bit.png"
+          alt="logo-diego"
+        />
+        <p
+          slot="descripcion"
+          class="text-white font-ibm text-[14px] font-light"
+        >
+          Soy un programador con más de <strong
+            class="text-brand1 hover:text-brand2">6</strong
+          > años de experiencia, como <strong
+            class="text-brand1 hover:text-brand2">Software Engineer</strong
+          > y desarrollo de <strong class="text-brand1 hover:text-brand2"
+            >Inteligencia Artificial</strong
+          >.
+        </p>
+      </CardEmployee>
+      <CardEmployee
+        name="Antonio Valverde"
+        instagram="galveniano"
+        linkedin=""
+        nameColor="text-violet-500"
+        mandoColor="#895bf3"
+        src="./redbull.png"
+      >
+        <img
+          slot="avatar"
+          class="min-w-[80px] hover:opacity-80 w-[33%] h-[80%] border-y-2 border-double hover:border-violet-500 border-bg1"
+          src="./galveniano-8bit.png"
+          alt="logo-antonio"
+        />
+        <p
+          slot="descripcion"
+          class="text-white font-ibm text-[14px] font-light"
+        >
+          Soy un programador con más de <strong
+            class="text-brand1 hover:text-brand2">6</strong
+          > años de experiencia, especializado en proyectos de <strong
+            class="text-brand1 hover:text-brand2"
+            >inteligencia artificial</strong
+          > y desarrollo de <strong class="text-brand1 hover:text-brand2"
+            >chatbots</strong
+          >.
+        </p>
+      </CardEmployee>
     </div>
+  </div>
 </div>

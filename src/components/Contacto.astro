@@ -1,38 +1,77 @@
 ---
-import MouseHeader from '../components/MouseHeader.astro';
-import TituloSeccion from '../components/TituloSeccion.astro';
+import MouseHeader from "../components/MouseHeader.astro";
+import TituloSeccion from "../components/TituloSeccion.astro";
 ---
 
-
-<div class="flex gap-2 items-center p-[128px] flex-col justify-center gap-[64px] self-stretch">
-    <MouseHeader/>
-    <div class="flex flex-col justify-center items-center gap-[40px] self-stretch">
-
-        <div class="flex justify-center items-center self-stretch">
-            <h2 class="text-brand2 text-[40px] font-code capitalize font-normal leading-10 animate-slide-in-top">Contacto</h2>
-        </div>
-        <div class="flex justify-center items-center gap-[128px] self-stretch">
-            <p class="text-white font-ibm text-[14px] font-light">Estamos preparados para ayudarte.</p>
-        </div>
-
-        <div class="grid mb-5 w-100 gap-4 grid-cols-2 grid-rows-2" >   
-            <div>   
-                <p class="text-brand1 font-code text-[14px] font-light">Nombre</p>
-                <input type="text" name="price" id="price" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-white font-code ring-1 ring-inset ring-brand1 placeholder:text-white hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6" placeholder="Introduce Tu Nombre">
-            </div>
-            <div>   
-                <p class="text-brand1 font-code text-[14px] font-light">Correo Electronico</p>
-                <input type="text" name="price" id="price" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-white font-code ring-1 ring-inset ring-brand1 placeholder:text-white hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6" placeholder="Introduce du Correo">
-            </div>
-            <div class="col-span-2">   
-                <p class="text-brand1 font-code text-[14px] font-light">Mensaje</p>
-                <input type="text" name="price" id="price" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-white font-code ring-1 ring-inset ring-brand1 placeholder:text-white hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6" placeholder="Escribe tu Mensaje">
-            </div>
-        </div>
-
-        <button class="flex justify-center mb-40 py-[16px] px-[32px] items-center gap-[16px] font-code text-white border-4 border-brand2 hover:border-white  hover:text-brand1 text-base font-normal capitalize bg-bg1">
-            Envianos un Mensaje
-        </button>
-
+<div
+  class="flex gap-2 items-center p-[8px] sm:p-[16px] md:p-[32px] lg:p-[64px] xl:p-[128px] flex-col justify-center gap-[64px] self-stretch"
+>
+  <MouseHeader />
+  <div
+    class="flex flex-col justify-center items-center gap-[40px] self-stretch"
+  >
+    <div class="flex justify-center items-center self-stretch">
+      <h2
+        class="text-brand2 text-[40px] font-code capitalize font-normal leading-10 animate-slide-in-top"
+      >
+        Contacto
+      </h2>
     </div>
+    <div class="flex justify-center items-center gap-[128px] self-stretch">
+      <p class="text-white font-ibm text-[14px] font-light">
+        Estamos preparados para ayudarte.
+      </p>
+    </div>
+
+    <div class="grid mb-5 w-100 gap-4 grid-cols-2 grid-rows-2">
+      <div>
+        <p
+          class="text-brand1 font-code text-[8px] sm:text-[10px] md:text-[12px] font-light"
+        >
+          Nombre
+        </p>
+        <input
+          type="text"
+          name="price"
+          id="price"
+          class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-white font-code ring-1 ring-inset ring-brand1 placeholder:text-white hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+          placeholder="Introduce Tu Nombre"
+        />
+      </div>
+      <div>
+        <p
+          class="text-brand1 font-code text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] text-nowrap font-light"
+        >
+          Correo Electronico
+        </p>
+        <input
+          type="text"
+          name="price"
+          id="price"
+          class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-white font-code ring-1 ring-inset ring-brand1 placeholder:text-white hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+          placeholder="Introduce du Correo"
+        />
+      </div>
+      <div class="col-span-2">
+        <p
+          class="text-brand1 font-code text-[8px] sm:text-[10px] md:text-[12px] font-light"
+        >
+          Mensaje
+        </p>
+        <input
+          type="text"
+          name="price"
+          id="price"
+          class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-white font-code ring-1 ring-inset ring-brand1 placeholder:text-white hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+          placeholder="Escribe tu Mensaje"
+        />
+      </div>
+    </div>
+
+    <button
+      class="flex justify-center text-nowrap mb-40 py-[8px] px-[16px] lg:py-[16px] lg:px-[32px] items-center gap-[16px] font-code text-white border-4 border-brand2 hover:border-white hover:text-brand1 text-base font-normal capitalize bg-bg1"
+    >
+      Envianos un Mensaje
+    </button>
+  </div>
 </div>
